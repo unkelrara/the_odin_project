@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript
+    </title>
+</head>
+<body>
+    <script>  
+let numberAdd7=prompt("Give me a number to add 7"); 
+function add7() {
+    let parsedNumber=parseInt(numberAdd7);
+    console.log(parsedNumber+7);
+}
+function favoriteAnimal(animal) {
+  console.log(animal + " is my favorite animal!")
+}
+let numberX1=prompt("Give me a number to multiply");
+let numberX2=prompt("Give me a second number to multiply");
+function multiply() {
+    let parsedX1=parseInt(numberX1);
+    let parsedX2=parseInt(numberX2);
+    console.log(parsedX1*parsedX2);
+}
+let capitalizedString=prompt("Give me a string with varied capitalization!");
+function capitalize() {
+    let first=capitalizedString.charAt(0).toUpperCase();
+    let rest=capitalizedString.slice(1).toLowerCase();
+    console.log(first+rest);
+}
+let lastLetterInput=prompt("Give me a string!");
+function lastLetter(){
+    let lastLetterStringLength=(lastLetterInput.length);
+    console.log(lastLetterInput.slice(lastLetterStringLength-1));
+}
+lastLetter()
+favoriteAnimal('Goat')
+add7()
+multiply()
+capitalize()
+lastLetter()
+    </script>
+</body>
+</html>
